@@ -17,5 +17,11 @@ class TestTranslator(unittest.TestCase):
     def test_french_to_english(self):
         self.assertEqual(french_to_english('Bonjour'), 'Hello')
 
+    def test_english_to_french_not_equal(self):
+        self.assertNotEqual(english_to_french('Cat'), 'Dog')
+
+    def test_french_to_english_not_equal(self):
+        self.assertNotEqual(french_to_english('madame'), 'husband')
+
 if __name__ == "__main__":
     unittest.main()
